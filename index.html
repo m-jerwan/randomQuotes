@@ -5,35 +5,50 @@
     <title>Daily Qoutes</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Pridi" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Pridi" rel="stylesheet">
   </head>
 
   <body>
     <div class="all-wrapper">
         <div class="top">
           <h1>Random Quotes Generator</h1>
-        </div> <!--<div class="top">-->
+        </div> <!---/<div class="top">-->
         <div class="content">
           <div class="quote" id="quote1">
-            <img src="http://placeimg.com/600/230/tech/grayscale" alt="quote1">
+            <img id="imgq1" src="#" alt="quote1">
           </div>
           <div class="quote" id="quote2">
-            <img src="http://placeimg.com/600/230/tech/sepia" alt="quote2">
+            <img id="imgq2" src="#" alt="quote2">
           </div>
           <div class="quote" id="quote3">
-            <img src="http://placeimg.com/600/230/tech/grayscale" alt="quote3">
+            <img id="imgq3" src="#" alt="quote3">
           </div>
           <div class="quote" id="quote4">
-            <img src="http://placeimg.com/600/230/tech/sepia" alt="quote4">
+            <img id="imgq4" src="#g" alt="quote4">
           </div>
           <div class="quote" id="quote5">
-            <img src="http://placeimg.com/600/230/tech/grayscale" alt="quote5">
+            <img id="imgq5" src="#" alt="quote5">
           </div>
         </div> <!--<div class="content">-->
         <div class="bottom">
         </div> <!--<div class="=bottom">-->
-
-      <script src="scripts.js"></script>  <!--jS lLINK-->
+        <footer>
+            <p>/wise words of code by marcin jerwan</p>
+        </footer>
+        <script>   //============ RANDOM ENGINE SCRIPT:
+        var q1 = Math.floor((Math.random() * 1) + 1);
+        var q2 = Math.floor((Math.random() * 1) + 1);
+        var q3 = Math.floor((Math.random() * 1) + 1);
+        var q4 = Math.floor((Math.random() * 1) + 1);
+        var q5 = Math.floor((Math.random() * 1) + 1);
+        </script>
+        <script>  //============ PICTURE SWAPPER: [PROBLEM: PICTURES MIGHT APPEAR TWICE:]
+            document.getElementById("imgq1").src = "img/img"+q1+".jpg";
+            document.getElementById("imgq2").src = "img/img"+q2+".jpg";
+            document.getElementById("imgq3").src = "img/img"+q3+".jpg";
+            document.getElementById("imgq4").src = "img/img"+q4+".jpg";
+            document.getElementById("imgq5").src = "img/img"+q5+".jpg";
+        </script>
     </div> <!--/<div class="all-wrapper">-->
   </body>
 </html>

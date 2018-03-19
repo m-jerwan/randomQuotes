@@ -1,7 +1,12 @@
 /*
           FONT :
  Brush Script MT
-          COLORS:
+          COLORS: Analogous 2 [adobe color wheel]
+lightblue: #8DE8E2
+lightgreen: #A9FFAB
+redskin: #F9947A
+ivory: #F9947A;
+darkivory: #F9947A
 
 
 */
@@ -14,7 +19,8 @@
 
 .all-wrapper,
 .content,
-.top {
+.top,
+.footer {
   display: flex;
 }
 
@@ -22,7 +28,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: black;
+  background-color: #8DE8E2;
   }
 
 /*---------------------------------------------TOP&BOTTOM*/
@@ -39,8 +45,17 @@
   }
   h1 {
       font-size: 5vh;
-      color: white;
+      color: #eee;
       font-family: 'Pridi', serif;
+  }
+  p {
+    color: white;
+    text-align: center;
+    margin-top: 2vh;
+  }
+  footer {
+    background-color: rgba(200, 200, 177, 0.5);
+    flex: 0.2;
   }
 
 /*---------------------------------------------CONTENT*/
@@ -50,22 +65,53 @@
     justify-content: space-between;
     max-width: 100vw;
     max-height: 30vh;
+    margin: 0 1em;
+    border-radius: 10px;
+    overflow: hidden;
   }
 
   .quote {
     flex: 1;
-    background-color: yellow;
   }
 
-    #quote1:hover,
-    #quote2:hover,
-    #quote3:hover,
-    #quote4:hover,
-    #quote5:hover {
-      flex:2.5;
-    }
+  #quote1:hover,
+  #quote2:hover,
+  #quote3:hover,
+  #quote4:hover,
+  #quote5:hover {
+    flex:4;
+    max-width: 768px;
+  }
 
-/*===================================================IMAGES:*/
+  /*===================================================IMAGES:*/
+  /*work in progress*/
+  .quote img {
+    height: 100%;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+  }
+  .quote img:hover {
+    opacity:0;
+    filter:alpha(opacity=0);
+  }
+/*===================================================BACKGROUNDS:*/
+
   .quote {
     overflow: hidden;
   }
+
+  #quote1 {
+    background-image: url("img/bcg1.jpg");
+  }
+  #quote2 {
+    background-image: url("img/bcg2.jpg");
+  }
+  #quote3 {
+    background-image: url("img/bcg3.jpg");
+  }
+  #quote4 {
+    background-image: url("img/bcg4.jpg");
+  }
+  #quote5 {
+      background-image: url("img/bcg5.jpg");
+    }
