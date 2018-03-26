@@ -60,11 +60,10 @@ darkivory: #F9947A
 
 /*---------------------------------------------CONTENT*/
   .content {
-    flex: 1;
     background-color: red;
     justify-content: space-between;
     max-width: 100vw;
-    max-height: 30vh;
+    height: 223px;
     margin: 0 1em;
     border-radius: 10px;
     overflow: hidden;
@@ -87,8 +86,8 @@ darkivory: #F9947A
   /*work in progress*/
   .quote img {
     height: 100%;
-    opacity:0.5;
-    filter:alpha(opacity=50);
+    opacity:0.8;
+    filter:alpha(opacity=80);
   }
   .quote img:hover {
     opacity:0;
@@ -101,17 +100,17 @@ darkivory: #F9947A
   }
 
   #quote1 {
-    background-image: url("img/bcg1.jpg");
+    background-image: url("#");
   }
   #quote2 {
-    background-image: url("img/bcg2.jpg");
+    background-image: url("#");
   }
   #quote3 {
-    background-image: url("img/bcg3.jpg");
+    background-image: url("#");
   }
   #quote4 {
-    background-image: url("img/bcg4.jpg");
+    background-image: url("#");
   }
   #quote5 {
-      background-image: url("img/bcg5.jpg");
+      background-image: url("#");
     }
